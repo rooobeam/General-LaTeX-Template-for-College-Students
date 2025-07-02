@@ -1,6 +1,6 @@
-# 大学生LaTeX 英文报告模板
+# 大学生LaTeX 报告模板
 
-本模板适用于撰写**大作业报告**，基于成都理工大学（CDUT）的报告格式规范进行修改，包含完整的文档结构（标题页、摘要、目录、章节、参考文献、附录等），页面和字体设置遵循一个英国项目规范Research_Project_Guide.pdf，并提供了详细的使用说明。
+本模板适用于撰写**大作业报告**，基于成都理工大学（CDUT）的报告格式规范进行修改，包含完整的文档结构（标题页、摘要、目录、章节、参考文献、附录等），页面和英文字体设置遵循一个英国项目规范Research_Project_Guide.pdf，并提供了详细的使用说明。
 
 
 ## 📁 文件结构
@@ -138,9 +138,9 @@
 - Email：rooobeam@uir.edu.cn
 
 
-# LaTeX Template for College Students' English Reports  
+# LaTeX Template for College Students' Reports  
 
-This template is suitable for writing **term paper reports**. It is modified based on the report format specifications of Chengdu University of Technology (CDUT) and includes a complete document structure (title page, abstract, table of contents, chapters, references, appendices, etc.). The page and font settings adhere to the British project specification *Research_Project_Guide.pdf*, and detailed usage instructions are provided.  
+This template is suitable for writing **term paper reports**. It is modified based on the report format specifications of Chengdu University of Technology (CDUT) and includes a complete document structure (title page, abstract, table of contents, chapters, references, appendices, etc.). The page and English font settings adhere to the British project specification *Research_Project_Guide.pdf*, and detailed usage instructions are provided.  
 
 
 ## 📁 File Structure  
