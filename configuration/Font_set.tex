@@ -1,0 +1,79 @@
+\ProvidesFile{Font_set.tex}[2023]
+\RequirePackage{titlesec}
+\RequirePackage{tabularx}
+
+% 中文采用Fondol系列字体
+% Fandol系列字体仓库地址: https://github.com/Yixf-Self/fandol-font
+
+\setmainfont{Arial} % 设置西文主字体
+\setsansfont{Arial} % 设置西文无衬线字体
+
+\newfontfamily\timesnewroman{Times New Roman}
+
+\setCJKmainfont[
+    BoldFont=FandolSong-Bold.otf,
+    ItalicFont=FandolKai-Regular.otf
+    ]{FandolSong-Regular.otf}
+
+\setCJKsansfont[
+    BoldFont=FandolHei-Bold.otf
+    ]{FandolHei-Regular.otf}
+
+\setCJKmonofont[
+    BoldFont=FandolHei-Bold.otf,
+    ]{FandolHei-Regular.otf}
+
+\setCJKfamilyfont{song}[
+    BoldFont=FandolSong-Bold.otf,
+    ItalicFont=FandolKai-Regular.otf
+    ]{FandolSong-Regular.otf}
+
+\setCJKfamilyfont{kai}[
+    BoldFont=FandolKai-Regular.otf,
+    ItalicFont=FandolKai-Regular.otf
+]{FandolKai-Regular.otf}
+
+\setCJKfamilyfont{hei}[
+    BoldFont=FandolHei-Bold.otf,
+    ItalicFont=FandolHei-Regular.otf
+]{FandolHei-Regular.otf}
+
+
+\newcommand\kaishu{\CJKfamily{kai}} % 该命令对后面所有文本起作用
+\newcommand\songti{\CJKfamily{song}}
+\newcommand\heiti{\CJKfamily{hei}}
+
+\renewcommand{\normalsize}{\fontsize{12pt}{14.4pt}\selectfont}
+\renewcommand{\small}{\fontsize{10pt}{12pt}\selectfont}
+
+\titleformat{\section}[display]
+{\heiti\fontsize{16pt}{19.2pt}\selectfont\bfseries\centering}
+{\chaptertitlename\,\thechapter}{1em}{}
+
+\titleformat{\subsection}
+{\heiti\fontsize{14pt}{16.8pt}\selectfont\bfseries}
+{\thesection}{1em}{}
+
+\titleformat{\subsubsection}
+{\heiti\fontsize{12pt}{14.4pt}\selectfont\bfseries}
+{\thesubsection}{1em}{}
+
+\newcommand{\tablefont}{\timesnewroman\fontsize{10pt}{12pt}\selectfont}
+
+\let\oldtabular\tabular
+\let\oldendtabular\endtabular
+\renewenvironment{tabular}[1]{%
+    \tablefont%
+    \oldtabular{#1}%
+}{%
+    \oldendtabular%
+}
+
+\let\oldtabularx\tabularx
+\let\oldendtabularx\endtabularx
+\renewenvironment{tabularx}[2]{%
+    \tablefont%
+    \oldtabularx{#1}{#2}%
+}{%
+    \oldendtabularx%
+}

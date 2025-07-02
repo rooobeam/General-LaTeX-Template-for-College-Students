@@ -1,0 +1,18 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{Mycommand}[2023]
+
+\newcommand{\dl}{\mathop{}\!\mathrm{d}}
+\newcommand{\bm}[1]{\boldsymbol{#1}}
+\newcommand{\e}{\boldsymbol{e}}
+\newcommand{\nul}{\operatorname{null}}
+\newcommand{\range}{\operatorname{range}}
+
+\makeatletter
+
+\RequirePackage{subcaption}    % 子图支持 (现代替代方案)
+% 子图标签格式设置
+\captionsetup[subfigure]{labelfont=normalfont, labelformat=parens, labelsep=space}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{makecell}   % 多行文本对齐

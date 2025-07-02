@@ -1,0 +1,43 @@
+\ProvidesFile{Title_set.tex}[2023]
+
+\RequirePackage{titlesec}
+
+\titleformat{name=\chapter}
+    [block]
+    {\Huge\sffamily\heiti}
+    {\thechapter\,.}
+    {1em}
+    {}
+\titlespacing*{\chapter}{0pt}{0pt}{30pt}  % 去除chapter上方的间距
+% \titleformat{\section}
+%    [block]
+%    {\raggedright\Large\bfseries\sffamily\heiti}
+%    {\thesection}
+%    {0.5em}
+%    {\titlerule[1pt]\vspace{0.5ex}\\}
+
+\titleformat{name=\section}
+    [block]
+    {\LARGE\sffamily\heiti}
+    {\thesection}
+    {1em}
+    {}
+    []
+
+\titleformat{name=\subsection}
+    [block]
+    {\Large\sffamily\heiti}
+    {\thesubsection}
+    {1em}
+    {}
+    []
+
+\titleformat{name=\subsubsection}
+    [block]
+    {\large\sffamily\heiti}
+    {\thesubsubsection}
+    {1em}
+    {}
+    []
+
+
